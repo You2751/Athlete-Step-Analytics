@@ -2,7 +2,7 @@
 
 ---
 
-## 📅 **Project Overview**
+## **Project Overview**
 
 This project aims to measure the **distance between athletes' feet** in sports videos where drills are performed at varying distances from the camera. The challenge lies in ensuring these measurements remain **consistent** despite changes in depth and perspective.
 
