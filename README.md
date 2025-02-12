@@ -95,10 +95,3 @@ This approach combined **MediaPipe's pose estimation** with a generalized deep l
   - **Hybrid Approaches:** Combining lightweight pose estimation with approximate depth models for balance.
 
 ---
-
-## 📝 **Conclusion**
-
-This project tackled the challenge of depth-invariant foot distance measurement using multiple approaches. While some methods fell short, the final **BlazePose-MiDaS** solution proved effective for consistent measurements in sports analytics. The journey highlighted the importance of **datasets**, **hardware resources**, and **model selection** for achieving reliable results.
-
----
-
