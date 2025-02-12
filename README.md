@@ -14,7 +14,7 @@ The goal is to develop a **depth-invariant measurement system** using various po
 
 ### 🎮 **Initial Idea: VideoPose3D for 3D Pose Estimation**
 
-I initially considered using **[VideoPose3D](https://github.com/facebookresearch/VideoPose3D)** to predict **3D poses from 2D keypoints**. This approach eliminates the need for explicit depth models by learning the relationship between 2D and 3D poses directly.
+I initially considered using **[VideoPose3D](https://github.com/facebookresearch/VideoPose3D)** to predict **3D poses from 2D keypoints**. This approach eliminates the need for explicit depth models by directly learning the relationship between 2D and 3D poses.
 
 - **Dataset Requirement:** Planned to use the **SportsPose** dataset, which aligns perfectly with the sports analytics use case. However, accessing this dataset required a special request, and **I didn't receive permission** in time.
 
@@ -33,7 +33,7 @@ I initially considered using **[VideoPose3D](https://github.com/facebookresearch
 - **Workflow:**
   1. **BlazePose** detects 33 keypoints, providing 2D coordinates.
   2. **MiDaS** generates a depth map for the frame.
-  3. 2D keypoints are mapped to the depth map to extract **3D coordinates**.
+  3. 2D key points are mapped to the depth map to extract **3D coordinates**.
   4. The **Euclidean distance** between the feet is calculated using these 3D coordinates.
 
 - **Pros:**
@@ -51,12 +51,12 @@ I initially considered using **[VideoPose3D](https://github.com/facebookresearch
 This approach combined **MediaPipe's pose estimation** with a generalized deep learning model named **Deep-Anything-V2**.
 
 - **Workflow:**
-  1. MediaPipe was used for detecting body keypoints.
+  1. MediaPipe was used for detecting body key points.
   2. Deep-Anything-V2 was applied to enhance pose detection.
 
 - **Challenges & Failures:**
   - ❌ **Model Incompatibility:** Deep-Anything-V2 isn’t optimized for depth estimation or sports-specific analysis.
-  - ❌ **Pose Inaccuracy:** Struggled with maintaining consistent keypoints during backward/forward movements.
+  - ❌ **Pose Inaccuracy:** Struggled with maintaining consistent key points during backward/forward movements.
   - ❌ **Overfitting Issues:** Despite parameter tuning, overfitting occurred on specific frames.
 
 - **Outcome:** This approach didn’t yield reliable results.
