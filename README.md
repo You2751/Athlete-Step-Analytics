@@ -10,7 +10,7 @@ The goal is to develop a **depth-invariant measurement system** using various po
 
 ---
 
-## 💡 **Approach & Pipeline**
+## **Approach & Pipeline**
 
 ### 🎮 **Initial Idea: VideoPose3D for 3D Pose Estimation**
 
@@ -26,7 +26,7 @@ I initially considered using **[VideoPose3D](https://github.com/facebookresearch
 
 ---
 
-### 🔢 **Method 1: BlazePose with MiDaS**
+### **Method 1: BlazePose with MiDaS**
 
 **[BlazePose](https://github.com/geaxgx/depthai_blazepose)** is a lightweight pose estimation model, and **[MiDaS](https://github.com/isl-org/MiDaS)** is a monocular depth estimation model. Integrating both allowed for accurate foot distance calculations across varying depths.
 
@@ -46,7 +46,7 @@ I initially considered using **[VideoPose3D](https://github.com/facebookresearch
 
 ---
 
-### 💥 **Method 2: MediaPipe with Deep-Anything-V2.ipynb**
+### **Method 2: MediaPipe with Deep-Anything-V2.ipynb**
 
 This approach combined **MediaPipe's pose estimation** with a generalized deep learning model named **Deep-Anything-V2**.
 
@@ -63,7 +63,7 @@ This approach combined **MediaPipe's pose estimation** with a generalized deep l
 
 ---
 
-### 🤖 **Method 3: Meta's Sapiens Pose and Depth Estimation**
+### **Method 3: Meta's Sapiens Pose and Depth Estimation**
 
 **Meta's [Sapiens models](https://huggingface.co/facebook/sapiens-depth-1b-torchscript)** offer state-of-the-art pose and depth estimation capabilities.
 
@@ -81,7 +81,7 @@ This approach combined **MediaPipe's pose estimation** with a generalized deep l
 
 ---
 
-## 💡 **Key Takeaways & Learnings**
+## **Key Takeaways & Learnings**
 
 - **🌟 Success:** The integration of **BlazePose with MiDaS** provided a reliable, depth-aware foot distance measurement system for forward and backward movements.
 
