@@ -37,12 +37,12 @@ I initially considered using **[VideoPose3D](https://github.com/facebookresearch
   4. The **Euclidean distance** between the feet is calculated using these 3D coordinates.
 
 - **Pros:**
-  - 🔄 **Accurate for Forward/Backward Movements**: Handles movements towards/away from the camera effectively.
-  - 🚀 **Lightweight:** Runs efficiently on most hardware.
+  - **Accurate for Forward/Backward Movements**: Handles movements towards/away from the camera effectively.
+  - **Lightweight:** Runs efficiently on most hardware.
 
 - **Cons:**
-  - 🚨 **Struggles with Side Movements:** Less accurate when athletes move laterally.
-  - 🌀 **Edge Depth Inconsistencies:** MiDaS can misestimate depth at image boundaries.
+  - **Struggles with Side Movements:** Less accurate when athletes move laterally.
+  - **Edge Depth Inconsistencies:** MiDaS can misestimate depth at image boundaries.
 
 ---
 
@@ -55,9 +55,9 @@ This approach combined **MediaPipe's pose estimation** with a generalized deep l
   2. Deep-Anything-V2 was applied to enhance pose detection.
 
 - **Challenges & Failures:**
-  - ❌ **Model Incompatibility:** Deep-Anything-V2 isn’t optimized for depth estimation or sports-specific analysis.
-  - ❌ **Pose Inaccuracy:** Struggled with maintaining consistent key points during backward/forward movements.
-  - ❌ **Overfitting Issues:** Despite parameter tuning, overfitting occurred on specific frames.
+  - **Model Incompatibility:** Deep-Anything-V2 isn’t optimized for depth estimation or sports-specific analysis.
+  - **Pose Inaccuracy:** Struggled with maintaining consistent key points during backward/forward movements.
+  - **Overfitting Issues:** Despite parameter tuning, overfitting occurred on specific frames.
 
 - **Outcome:** This approach didn’t yield reliable results.
 
@@ -72,8 +72,8 @@ This approach combined **MediaPipe's pose estimation** with a generalized deep l
   2. Processed frames to extract 3D coordinates.
 
 - **Challenges:**
-  - 🚧 **Computational Constraints:** The models are resource-intensive and **failed to run on available hardware**.
-  - ⚡ **Optimization Attempts:**
+  - **Computational Constraints:** The models are resource-intensive and **failed to run on available hardware**.
+  - **Optimization Attempts:**
     - Processed only **one frame at the beginning**, **two in the middle**, and **one at the end** to reduce computational load.
     - Despite optimizations, the models didn’t run due to hardware limitations.
 
@@ -83,13 +83,13 @@ This approach combined **MediaPipe's pose estimation** with a generalized deep l
 
 ## **Key Takeaways & Learnings**
 
-- **🌟 Success:** The integration of **BlazePose with MiDaS** provided a reliable, depth-aware foot distance measurement system for forward and backward movements.
+- **Success:** The integration of **BlazePose with MiDaS** provided a reliable, depth-aware foot distance measurement system for forward and backward movements.
 
-- **🚫 Failures:**
+- **Failures:**
   - **Deep-Anything-V2** lacked the capability for depth-invariant analysis.
   - **Meta's Sapiens models** were computationally too demanding.
 
-- **📆 Future Improvements:**
+- **Future Improvements:**
   - **Access Specialized Datasets:** Datasets like **SportsPose** could significantly improve performance.
   - **Hardware Upgrades:** Deploying resource-heavy models like Sapiens requires more powerful computational resources.
   - **Hybrid Approaches:** Combining lightweight pose estimation with approximate depth models for balance.
