@@ -19,8 +19,8 @@ I initially considered using **[VideoPose3D](https://github.com/facebookresearch
 - **Dataset Requirement:** Planned to use the **SportsPose** dataset, which aligns perfectly with the sports analytics use case. However, accessing this dataset required a special request, and **I didn't receive permission** in time.
 
 - **Why This Approach:**
-  - 💲 **Cost-Effective:** No need for complex depth models.
-  - 🏋️‍♂️ **Sports-Specific:** The SportsPose dataset is tailored for sports scenarios.
+  - **Cost-Effective:** No need for complex depth models.
+  - **Sports-Specific:** The SportsPose dataset is tailored for sports scenarios.
 
 - **Outcome:** Unable to obtain the dataset, so I pivoted to other methods.
 
