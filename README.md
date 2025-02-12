@@ -1,4 +1,4 @@
-# 🔍 **Depth-Aware Foot Distance Measurement for Sports Analytics**
+# **Depth-Aware Foot Distance Measurement for Sports Analytics**
 
 ---
 
