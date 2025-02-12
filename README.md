@@ -12,7 +12,7 @@ The goal is to develop a **depth-invariant measurement system** using various po
 
 ## **Approach & Pipeline**
 
-### 🎮 **Initial Idea: VideoPose3D for 3D Pose Estimation**
+### **Initial Idea: VideoPose3D for 3D Pose Estimation**
 
 I initially considered using **[VideoPose3D](https://github.com/facebookresearch/VideoPose3D)** to predict **3D poses from 2D keypoints**. This approach eliminates the need for explicit depth models by directly learning the relationship between 2D and 3D poses.
 
