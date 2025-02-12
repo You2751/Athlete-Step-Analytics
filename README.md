@@ -28,7 +28,7 @@ I initially considered using **[VideoPose3D](https://github.com/facebookresearch
 
 ### 🔢 **Method 1: BlazePose with MiDaS**
 
-**[BlazePose](https://google.github.io/mediapipe/solutions/pose.html)** is a lightweight pose estimation model, and **[MiDaS](https://github.com/isl-org/MiDaS)** is a monocular depth estimation model. Integrating both allowed for accurate foot distance calculations across varying depths.
+**[BlazePose](https://github.com/geaxgx/depthai_blazepose)** is a lightweight pose estimation model, and **[MiDaS](https://github.com/isl-org/MiDaS)** is a monocular depth estimation model. Integrating both allowed for accurate foot distance calculations across varying depths.
 
 - **Workflow:**
   1. **BlazePose** detects 33 keypoints, providing 2D coordinates.
